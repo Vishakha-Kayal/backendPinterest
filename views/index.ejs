@@ -1,0 +1,24 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-600 bg-[url('/images/bg.avif')] bg-center bg-cover flex justify-center items-center">
+    <div class="w-[30vw] bg-zinc-100 rounded-[30px] px-16 py-5"> 
+      <img src="./images/logo.png" class="w-16 h-16 m-auto" alt="">
+      <h1 class="text-3xl text-center mt-4 leading-none tracking-tight font-semibold text-zinc-700">Create New Account</h1>
+      <form action="/register" method="post">
+        <input type="text" class="block border-2 border-zinc-400 rounded-md w-full px-3 py-2 mt-4" name="name" placeholder="Enter your full name">
+        <input type="text" class="block border-2 border-zinc-400 rounded-md w-full px-3 py-2 mt-4" name="username" placeholder="Enter your username">
+        <input type="password" class="block border-2 border-zinc-400 rounded-md w-full px-3 py-2 mt-4  capitalize" name="password" placeholder="enter your password">
+        <input type="email" class="block border-2 border-zinc-400 rounded-md w-full px-3 py-2 mt-4" name="email" placeholder="Enter your email">
+        <input type="number" class="block border-2 border-zinc-400 rounded-md w-full px-3 py-2 mt-4  capitalize" name="number" placeholder="enter your contact number">
+        <button class="block border-2 w-full px-3 py-2 bg-red-600 text-white rounded-full mt-5">SignUp</button>
+      </form>
+      <p class="w-4/5 text-sm mx-auto mt-5 text-zinc-600 ">
+        By continuing, you agree to Pinterest's <strong>Terms and Conditions</strong> and acknowledge you've read our Privacy Policy 
+        Notice at collection
+      </p>
+      <div class="w-full mt-2 text-zinc-500 text-base text-center">
+        Already signed On Pinterest ??<a href="http://localhost:3000/register" class="font-bold">LogIn</a>
+      </div>
+    </div>
+  </div>
+ 
+<% include ./partials/footer.ejs %>
