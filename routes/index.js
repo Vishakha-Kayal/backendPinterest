@@ -51,7 +51,7 @@ router.post("/createpost", isLoggedIn, upload.single("postimage") , async functi
   });
   const post = await postModel.create({
     user:user._id,
-    title:req.body.title,
+    title:req.body.title, 
     description:req.body.description,
     Image:req.file.filename
   })
